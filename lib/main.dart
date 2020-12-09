@@ -1,3 +1,4 @@
+import 'package:clone_flutter_app/screen/home_screen.dart';
 import 'package:clone_flutter_app/widget/BottomBar.dart';
 import 'package:flutter/material.dart';
 
@@ -25,11 +26,12 @@ class _MyAppState extends State<MyApp> {
             body: TabBarView(
               physics: NeverScrollableScrollPhysics(),
               children: [
-                Container(
+                HomeScreen(),
+                /*Container(
                   child: Center(
                     child: Text('home'),
                   ),
-                ),
+                ),*/
                 Container(
                   child: Center(
                     child: Text('search'),
