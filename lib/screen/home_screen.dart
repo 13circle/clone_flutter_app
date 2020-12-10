@@ -1,3 +1,4 @@
+import 'package:clone_flutter_app/model/model_movie.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -5,6 +6,14 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  List<Movie> movies = [
+    Movie.fromMap({
+      'title': 'Yee',
+      'keyword': 'Meme/Dinosaur/Hilarious',
+      'poster': 'test_movie_1.png',
+      'like': false,
+    }),
+  ];
   @override
   void initState() {
     super.initState();
