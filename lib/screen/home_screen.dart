@@ -1,5 +1,7 @@
 import 'package:clone_flutter_app/model/model_movie.dart';
+import 'package:clone_flutter_app/widget/box_slider.dart';
 import 'package:clone_flutter_app/widget/carousel_slider.dart';
+import 'package:clone_flutter_app/widget/circle_slider.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -49,7 +51,11 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             TopBar()
           ],
-        )
+        ),
+        CircleSlider(
+          movies: movies,
+        ),
+        BoxSlider(movies: movies),
       ],
     );
   }
