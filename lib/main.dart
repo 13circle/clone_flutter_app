@@ -1,4 +1,5 @@
 import 'package:clone_flutter_app/screen/home_screen.dart';
+import 'package:clone_flutter_app/screen/like_screen.dart';
 import 'package:clone_flutter_app/screen/more_screen.dart';
 import 'package:clone_flutter_app/screen/search_screen.dart';
 import 'package:clone_flutter_app/widget/BottomBar.dart';
@@ -33,11 +34,7 @@ class _MyAppState extends State<MyApp> {
               children: [
                 HomeScreen(),
                 SearchScreen(),
-                Container(
-                  child: Center(
-                    child: Text('save'),
-                  ),
-                ),
+                LikeScreen(),
                 MoreScreen()
               ],
             ),
